@@ -1,55 +1,28 @@
-Yii 2 Advanced Project Template
-===============================
+Yii 2 WaveCMS
+=============
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
+WaveCMS is content management system based on  [Yii 2](http://www.yiiframework.com/) and [Yii 2 Advanced Application Template](https://github.com/yiisoft/yii2-app-advanced)
 
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
 
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
+Installing using Composer
+-------------------------
 
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
+1. Install application using following command: 
+```
+TO CHANGE
+composer global require "fxp/composer-asset-plugin:^1.3.1"
+composer create-project --prefer-dist mariuszstroz/yii2-wavecms my-project
+```
 
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-advanced/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-advanced/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-advanced.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-advanced)
-
-DIRECTORY STRUCTURE
--------------------
+2. Open a console terminal, execute the init command
 
 ```
-common
-    config/              contains shared configurations
-    mail/                contains view files for e-mails
-    models/              contains model classes used in both backend and frontend
-    tests/               contains tests for common classes    
-console
-    config/              contains console configurations
-    controllers/         contains console controllers (commands)
-    migrations/          contains database migrations
-    models/              contains console-specific model classes
-    runtime/             contains files generated during runtime
-backend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for backend application    
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-frontend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains frontend configurations
-    controllers/         contains Web controller classes
-    models/              contains frontend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for frontend application
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-    widgets/             contains frontend widgets
-vendor/                  contains dependent 3rd-party packages
-environments/            contains environment-based overrides
+/path/to/php-bin/php /path/to/yii-application/init
+```
+
+3. Create a new database and adjust the `components['db']` configuration in `common/config/main-local.php` accordingly.
+
+4. Open a console terminal, apply migrations with command 
+```
+/path/to/php-bin/php /path/to/yii-application/yii migrate`.
 ```

@@ -1,16 +1,14 @@
 {
-    "name": "yiisoft/yii2-app-advanced",
-    "description": "Yii 2 Advanced Project Template",
-    "keywords": ["yii2", "framework", "advanced", "project template"],
-    "homepage": "http://www.yiiframework.com/",
+    "name": "inwave-eu/yii2-wavecms",
+    "description": "Yii 2 WaveCMS",
+    "keywords": ["yii2", "cms", "cmf", "waveCMS"],
+    "homepage": "https://github.com/inwave-eu/yii2-wavecms",
     "type": "project",
-    "license": "BSD-3-Clause",
+    "license": "MIT",
     "support": {
-        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
-        "forum": "http://www.yiiframework.com/forum/",
-        "wiki": "http://www.yiiframework.com/wiki/",
-        "irc": "irc://irc.freenode.net/yii",
-        "source": "https://github.com/yiisoft/yii2"
+        "issues": "https://github.com/inwave-eu/yii2-wavecms/issues?state=open",
+        "wiki": "https://github.com/inwave-eu/yii2-wavecmswiki",
+        "source": "https://github.com/inwave-eu/yii2-wavecms"
     },
     "minimum-stability": "stable",
     "require": {
